@@ -13,14 +13,16 @@ body {
   text-align: center;
 }
 
-.p-8 {
-  padding: 8px;
+.p-8,
+.p-16,
+.p-32  {
+  padding-top: 0.5%;
 }
 
-.p-16 {
-  padding: 16px;
-}
-
-.p-32 {
-  padding: 32px;
+@media (max-width: 600px) {
+  .p-8,
+  .p-16,
+  .p-32  {
+    padding: 1%;
+  }
 }

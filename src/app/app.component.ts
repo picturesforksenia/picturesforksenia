@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { CardData } from './card-data.model';
+import {Component, OnInit} from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import {CardData} from './card-data.model';
 
 @Component({
   selector: 'app-root',
@@ -10,15 +10,24 @@ import { CardData } from './card-data.model';
 export class AppComponent implements OnInit {
 
   cardImages = [
-    'f62f61ae-ebf9-4a7c-a696-dd06765f697f.JPG',
-    '6597e509-f388-460e-8d2e-df1733050eeb.JPG',
-    'd54d701d-665a-4403-8414-98e221f2ff9d.JPG',
-    '8bee9e87-549a-4ee2-bc39-5c0b35c7d4fb',
-    'c408099f-ccae-4e70-84d0-f3533dedb629',
-    '4d7df00e-8d14-4b83-946e-7f4075e20a71.JPG',
-    '3a7e6b13-6ae4-44d4-895d-341e008451aa.JPG',
-    'fce2a2cb-e654-435a-bae1-41cf36c3964b.JPG'
-  ];
+    '008bdc5c-4c59-46d2-94e3-b2f272bbd1e5.JPG',
+    '0d9f3682-adb4-451c-a38b-c606433b1687.JPG',
+    '28012b7c-e583-47b7-ab3c-7a6eeebf560b.JPG',
+    '4830a9ef-4720-45b5-8e0f-92d973ff74f7.JPG',
+    '5234dcca-3fd7-4e04-8ac3-5fd58b0822d8.JPG',
+    '59b66636-2246-45bb-8f2f-16b34e73b188.JPG',
+    '5a42ad89-83dd-4c28-8edd-65967bfa702a.JPG',
+    '5ed7788f-a535-4f7a-98c6-6c0824938bdf.JPG',
+    '721c823a-8932-4168-aaa3-570a8170f6d0.JPG',
+    '7f6bb408-bc2a-4a92-9126-606028cba2e7.JPG',
+    '8cdea9ba-d842-4a17-b0e5-2c658f774e95.JPG',
+    '9efe89e5-7db3-42e6-abb1-f927c70442ac.JPG',
+    'b78f0a15-1cba-47ed-87d6-de314ca4d878.JPG',
+    'bfa92cdd-fb0f-4635-9094-287245305a46.JPG',
+    'dcf1193a-8ae8-46a6-812f-25a0a337dc97.JPG',
+    'ed5b4f00-c506-4dfd-a751-c3fa7154814f.JPG',
+    'f3929aea-3594-4924-8955-226fa726ce0d.JPG',
+  ]
 
   private NUMBER_OF_CARDS: Number = 5;
 
@@ -50,8 +59,8 @@ export class AppComponent implements OnInit {
         state: 'default'
       };
 
-      this.cards.push({ ...cardData });
-      this.cards.push({ ...cardData });
+      this.cards.push({...cardData});
+      this.cards.push({...cardData});
 
     });
 
@@ -89,7 +98,7 @@ export class AppComponent implements OnInit {
         this.matchedCount++;
 
         if (this.matchedCount === this.NUMBER_OF_CARDS) {
-            this.restart();
+          this.restart();
         }
       }
 
