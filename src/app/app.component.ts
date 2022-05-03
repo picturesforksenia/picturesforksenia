@@ -181,7 +181,7 @@ export class AppComponent implements OnInit {
 
   setupCards(): void {
     this.cards = [];
-    this.cardImages.filter((value, index) => index < this.NUMBER_OF_CARDS).forEach((image) => {
+    this.shuffleArray(this.cardImages).filter((value, index) => index < this.NUMBER_OF_CARDS).forEach((image) => {
       const cardData: CardData = {
         imageId: image,
         state: 'default'
