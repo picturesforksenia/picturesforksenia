@@ -1,8 +1,0 @@
-<h2 mat-dialog-title>Please choose!</h2>
-<mat-radio-group aria-labelledby="Select an option" class="radio-group" [(ngModel)]="mode">
-  <mat-radio-button class="radio-button" *ngFor="let mode of modes" [value]="mode">{{mode}}</mat-radio-button>
-</mat-radio-group>
-<mat-dialog-actions>
-    <button mat-raised-button color="secondary" [mat-dialog-close]="null" cdkFocusInitial>Cancel</button>
-  <button mat-raised-button color="primary" [mat-dialog-close]="mode" cdkFocusInitial>Continue</button>
-</mat-dialog-actions>

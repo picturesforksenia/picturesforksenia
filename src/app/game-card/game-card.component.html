@@ -1,8 +1,0 @@
-<div class="card" (click)="cardClicked.emit()" [@cardFlip]="data.state">
-    <div class="back">
-        <img src="assets/card-back.jpg">
-    </div>
-    <div class="front">
-        <img [src]="'https://pictures-for-ksenia.s3.amazonaws.com/' + data.imageId">
-    </div>
-</div>
